@@ -16,8 +16,8 @@ const items = [
 export default function EssentialsSubnav() {
     const path = usePathname();
     return (
-        <nav className="flex justify-between items-center px-6 py-3 shadow">
-            <ul className="mx-auto flex max-w-6xl gap-6 px-4">
+        <nav className="flex items-right px-6 py-3 shadow">
+            <ul className="flex max-w-6xl gap-6 px-4">
                 {items.map(i => (
                     <li key={i.href}>
                         <Link href={i.href} className={`${path === i.href ? "border-b-2 border-red-500" : "text-gray-600"}`}>{i.label}</Link>
